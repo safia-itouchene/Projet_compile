@@ -1,0 +1,55 @@
+prog {
+
+VAR {	
+	%% declaration des variables
+	INTEGER a , b , c , d , e , f , g , h , i , j ,k ,l  ;
+	INTEGER x , y , z;
+	FLOAT u;
+
+	%% declaration des tableaux
+	INTEGER T1[10];
+	FLOAT T2[10];
+    %% declaration des constantes
+        CONST s=5;
+		CONST v=2.2;
+		CONST w = (+5);        
+
+	%% declaration d'une structure
+	   STRUCT{
+			INTEGER n;
+			INTEGER m;
+	   }stcrt;
+	}
+	CODE{
+		
+	a = i*3;
+	b = 4 * g ;
+	d = c;
+	f = j+1 ;
+	e = d-1;
+	k = 4 * e;
+	h = i;
+	l = j-1;
+	z = 4 * y;
+	y = h;
+	e = j+1 ;
+	l = e-1;
+	
+	IF(l == 9){
+			d = l + 2;
+		}ELSE{
+			d=0;
+			u= u * 1.5;
+		}
+	
+	   %%y=w*x+1*3/(5*0);
+
+      FOR (i:0 : 2:n) { 
+              i=i+2; 
+         }
+
+          WHILE (a <= 5 && m > 2){
+               i=i+1; 
+          }
+	}
+}
